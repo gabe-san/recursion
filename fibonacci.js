@@ -18,6 +18,10 @@ function fibs(integer) {
 // Fibonacci JS recursive solution
 function fibsRec(integer) {
   console.log('This was printed recursively');
+  // in order to push a number to an array, you must arrive to the base case where two numbers are already known. in this case, once you reach integer 2, the base case declares the values of fibsRec(2), which can be used to solve: let array = fibsRec(2) = [0,1]
+  // array.length = 2
+  // array.push(array[2 - 1]) + array[2 - 2]) which is the same as fn = fn-1 + fn-2.
+  // the function can know works its way up the stack recursively in order to give the series sequence
   if (integer === 2) {
     return [0, 1]
   } else {

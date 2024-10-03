@@ -42,5 +42,3 @@ Mergesort: ideal for linked lists
 .sort(): general use/smaller database
 
 */
-
-// Visualized: https://tinyurl.com/894yj49p

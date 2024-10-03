@@ -14,3 +14,15 @@ function fibs(integer) {
   }
   return array;
 }
+
+// Fibonacci JS recursive solution
+function fibsRec(integer) {
+  console.log('This was printed recursively');
+  if (integer === 2) {
+    return [0, 1]
+  } else {
+    let array = fibsRec(integer - 1)
+    array.push(array[array.length - 1] + array[array.length - 2])
+    return array
+  }
+}
